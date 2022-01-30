@@ -22,7 +22,7 @@ class Home extends React.Component{
     }
     
     render(){
-        const {monsters,searchfield} = this.setState
+        const {monsters,searchfield} = this.state
         const filteredMonsters = monsters.filter((monster) =>monster.name.toLowerCase().includes(searchfield.toLowerCase()))
         return(
             <>
